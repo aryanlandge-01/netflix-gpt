@@ -1,9 +1,10 @@
+import Body from "./Components/Body";
+
 
 function App() {
-  return <div className="text-4xl m-40
-   text-center font-bold text-pink-500">
-    Hello world
-  </div>
+  return (
+    <Body />
+  )
 }
 
 
