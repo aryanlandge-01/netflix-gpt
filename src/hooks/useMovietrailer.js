@@ -28,6 +28,7 @@ const useMovietrailer = (movieId) => {
     useEffect(() => {
         !trailerVideo && getMovieVideos();
     }, []);
+
 }
 
 
