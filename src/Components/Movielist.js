@@ -21,4 +21,4 @@ const Movielist = ({ title, movies }) => {
     )
 }
 
-export default Movielist
+export default Movielist;

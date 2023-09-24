@@ -5,7 +5,7 @@ import { auth } from "../utils/firebase";
 import { checkValidData } from "../utils/Validate";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
-import { profileURL } from "../utils/Constant";
+import { bg_url, profileURL } from "../utils/Constant";
 
 
 
@@ -81,7 +81,7 @@ const Login = () => {
                 .then((userCredential) => {
                     // Signed in 
                     const user = userCredential.user;
-                    // console.log(user);
+                    console.log(user);
 
                     // ...
                 })
@@ -98,7 +98,7 @@ const Login = () => {
         <div>
             <Header />
             <div className="absolute">
-                <img src="https://assets.nflxext.com/ffe/siteui/vlv3/f85718e8-fc6d-4954-bca0-f5eaf78e0842/ea44b42b-ba19-4f35-ad27-45090e34a897/IN-en-20230918-popsignuptwoweeks-perspective_alpha_website_small.jpg"
+                <img src={bg_url}
                     alt="logo" />
             </div>
             <form onSubmit={(e) => e.preventDefault()} className="absolute flex flex-col w-4/12 mt-28 mx-96 text-white p-12 bg-black bg-opacity-80 rounded-xl">
