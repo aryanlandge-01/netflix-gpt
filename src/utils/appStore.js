@@ -7,7 +7,7 @@ import configureReducer from "./ConfigSlice";
 const appStore = configureStore(
     {
         reducer: {
-            user: userReducer,
+             user: userReducer,
             movies: moviesReducer,
             gpt: gptReducer,
             config: configureReducer,
